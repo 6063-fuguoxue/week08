@@ -6,9 +6,11 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  print(song.duration());
+  samples = song.getPeaks();
 }
 
 function draw() {
-  background(220, 20, 120);
+  push();
+  translate(0, height/2);
+
 }
